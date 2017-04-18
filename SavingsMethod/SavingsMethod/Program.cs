@@ -59,7 +59,7 @@ namespace SavingsMethod
                     Console.WriteLine("Not using node");
                     break;
                 //////////////////////////////////////////////////////////////////////////////
-                //Add by Will&Ying
+                //Add by Zihan&Ying
                 case 4:
                     Console.WriteLine("Exceeding max distance");
                     break;
@@ -109,7 +109,7 @@ namespace SavingsMethod
                     return 3;
             }
             ////////////////////////////////////////////////////////
-            //Add by Will&Ying
+            //Add by Zihan&Ying
             for (int i = 0; i < p.Length; i++)
             {
                 double distance = 0;
@@ -207,7 +207,7 @@ namespace SavingsMethod
                             //////////////////////////////////////////////////////////////////////////////////////////////////////
                         }
                         //////////////////////////////////////////////////////////////////////////////////////////////////////////
-                        //Add by Will&Ying
+                        //Add by Zihan&Ying
                         tourlength = tourlength - Savings[i].Saving;
                         //////////////////////////////////////////////////////////////////////////////////////////////////////////
                     }

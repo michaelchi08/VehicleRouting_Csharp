@@ -117,7 +117,7 @@ namespace SavingsMethod
             TOUR_SECTION = 18,
             EDGE_WEIGHT_SECTION = 19,
             BEST_KNOWN = 20,
-            MAX_LENGTH = 21 //Add by Will&Ying 10252012
+            MAX_LENGTH = 21 //Add by Zihan&Ying 
         }
         private enum TSPLIBEdgeWeightFormats
         {
@@ -268,7 +268,7 @@ namespace SavingsMethod
                             break;
                         //
                         default:
-                            break;// Add by WIll&Ying
+                            break;// Add by Zihan&Ying
                             //throw new InvalidDataException("Input file contains unknown or unsupported section (" + line + ") in line " + currentLineNumber.ToString());
                     }
                 } while (!(section == TSPLIBSections.EOF || source.EndOfStream));
@@ -311,7 +311,7 @@ namespace SavingsMethod
             if (sectionNameEnd + 1 < line.Length)
                 value = line.Substring(sectionNameEnd + 1);
             /////////////////////////////////////////////////////////////////
-            // Add by Will&Ying 10252012
+            // Add by Zihan&Ying 
             if (sectionName == "MAX. LENGTH")
             {
                 sectionName = "MAX_LENGTH";
@@ -353,7 +353,7 @@ namespace SavingsMethod
             else throw new InvalidDataException("Parsing the capacity in line " + currentLineNumber + " failed. It is not recognized as double value.");
         }
 
-        // Add by Will&Ying 10252012
+        // Add by Zihan&Ying 
         private void ReadMaxLength(string value)
         {
             double maxRoutelength;
